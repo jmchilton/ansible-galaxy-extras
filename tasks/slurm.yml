@@ -1,0 +1,10 @@
+
+
+- name: Create Munge Key
+  command: /usr/sbin/create-munge-key
+
+- name: Setup Munge
+  shell: "mkdir -p /var/run/munge && chown root:root /var/lib/munge/ /var/log/munge/ /var/run/munge /etc/munge/ /etc/munge/munge.key"
+
+- name: Setup tmp area for slurm.
+  shell: "mkdir /tmp/slurm && chown {{ galaxy_user_name }}:{{ galaxy_user_name }} /tmp/slurm"
