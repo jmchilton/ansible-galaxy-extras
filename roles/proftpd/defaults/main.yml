@@ -1,0 +1,8 @@
+proftpd_conf_path:  /etc/proftpd/proftpd.conf
+
+proftpd_db_connection: galaxy@localhost
+proftpd_db_username: galaxy
+proftpd_db_password: galaxy
+
+proftpd_welcome: "Public Galaxy FTP"
+proftpd_files_dir: /export/galaxy-central/database/ftp
